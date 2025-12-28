@@ -1,0 +1,232 @@
+//
+//  EmbeddedContent2.swift
+//  ShadowWord
+//
+//  Additional embedded categories
+//
+
+import Foundation
+
+extension ContentService {
+    static let additionalCategories: [Category] = [
+        // MARK: - Music & Instruments
+        Category(
+            name: "Music & Instruments",
+            icon: "music.note",
+            words: [
+                WordItem(word: "Piano", hint: "Black and white keys", difficulty: "easy"),
+                WordItem(word: "Guitar", hint: "Six strings", difficulty: "easy"),
+                WordItem(word: "Drums", hint: "Beat keeper", difficulty: "easy"),
+                WordItem(word: "Violin", hint: "Bow and strings", difficulty: "easy"),
+                WordItem(word: "Flute", hint: "Wind instrument", difficulty: "easy"),
+                WordItem(word: "Trumpet", hint: "Brass horn", difficulty: "easy"),
+                WordItem(word: "Saxophone", hint: "Jazz favorite", difficulty: "easy"),
+                WordItem(word: "Microphone", hint: "For singing", difficulty: "easy"),
+                WordItem(word: "Harmonica", hint: "Mouth organ", difficulty: "easy"),
+                WordItem(word: "Ukulele", hint: "Small guitar", difficulty: "easy"),
+                WordItem(word: "Cello", hint: "Large violin", difficulty: "medium"),
+                WordItem(word: "Clarinet", hint: "Reed instrument", difficulty: "medium"),
+                WordItem(word: "Trombone", hint: "Sliding brass", difficulty: "medium"),
+                WordItem(word: "Xylophone", hint: "Mallet bars", difficulty: "medium"),
+                WordItem(word: "Accordion", hint: "Squeeze box", difficulty: "medium"),
+                WordItem(word: "Banjo", hint: "Country strings", difficulty: "medium"),
+                WordItem(word: "Harp", hint: "Angel instrument", difficulty: "medium"),
+                WordItem(word: "Bass", hint: "Low notes", difficulty: "medium"),
+                WordItem(word: "Synthesizer", hint: "Electronic sounds", difficulty: "medium"),
+                WordItem(word: "Tambourine", hint: "Percussion jingles", difficulty: "medium"),
+                WordItem(word: "Oboe", hint: "Double reed", difficulty: "hard"),
+                WordItem(word: "Bassoon", hint: "Large woodwind", difficulty: "hard"),
+                WordItem(word: "French Horn", hint: "Coiled brass", difficulty: "hard"),
+                WordItem(word: "Tuba", hint: "Large brass", difficulty: "hard"),
+                WordItem(word: "Mandolin", hint: "Teardrop strings", difficulty: "hard"),
+                WordItem(word: "Sitar", hint: "Indian strings", difficulty: "hard"),
+                WordItem(word: "Didgeridoo", hint: "Australian wind", difficulty: "hard"),
+                WordItem(word: "Bagpipes", hint: "Scottish wind", difficulty: "hard"),
+                WordItem(word: "Theremin", hint: "No-touch sound", difficulty: "hard"),
+                WordItem(word: "Kalimba", hint: "Thumb piano", difficulty: "hard")
+            ],
+            questionPairs: [
+                QuestionPair(mainQuestion: "What instrument sounds most beautiful?", liarQuestion: "What instrument is most annoying?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What instrument would you learn?", liarQuestion: "What instrument seems too hard?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What instrument is most versatile?", liarQuestion: "What instrument is limited?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What genre is best?", liarQuestion: "What genre do you skip?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What instrument sounds romantic?", liarQuestion: "What instrument is too loud?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What concert would you attend?", liarQuestion: "What concert would you skip?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What artist is most talented?", liarQuestion: "What artist is overrated?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What song is timeless?", liarQuestion: "What song is overplayed?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What instrument is iconic?", liarQuestion: "What instrument is forgettable?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What music improves mood?", liarQuestion: "What music is depressing?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What instrument is underrated?", liarQuestion: "What instrument gets too much attention?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What makes a great performer?", liarQuestion: "What ruins a live show?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What genre will last forever?", liarQuestion: "What genre is a passing trend?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What album changed music?", liarQuestion: "What album was forgettable?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What would revive music?", liarQuestion: "What is hurting music?", difficulty: "hard")
+            ]
+        ),
+        
+        // MARK: - Nature & Weather
+        Category(
+            name: "Nature & Weather",
+            icon: "leaf.fill",
+            words: [
+                WordItem(word: "Mountain", hint: "Tall peak", difficulty: "easy"),
+                WordItem(word: "Ocean", hint: "Salt water", difficulty: "easy"),
+                WordItem(word: "Forest", hint: "Many trees", difficulty: "easy"),
+                WordItem(word: "River", hint: "Flowing water", difficulty: "easy"),
+                WordItem(word: "Beach", hint: "Sandy shore", difficulty: "easy"),
+                WordItem(word: "Desert", hint: "Hot and dry", difficulty: "easy"),
+                WordItem(word: "Rainbow", hint: "After rain", difficulty: "easy"),
+                WordItem(word: "Waterfall", hint: "Falling water", difficulty: "easy"),
+                WordItem(word: "Volcano", hint: "Erupts lava", difficulty: "easy"),
+                WordItem(word: "Island", hint: "Surrounded by water", difficulty: "easy"),
+                WordItem(word: "Thunder", hint: "Loud boom", difficulty: "medium"),
+                WordItem(word: "Lightning", hint: "Electric flash", difficulty: "medium"),
+                WordItem(word: "Tornado", hint: "Spinning wind", difficulty: "medium"),
+                WordItem(word: "Hurricane", hint: "Tropical storm", difficulty: "medium"),
+                WordItem(word: "Blizzard", hint: "Snow storm", difficulty: "medium"),
+                WordItem(word: "Glacier", hint: "Ice river", difficulty: "medium"),
+                WordItem(word: "Canyon", hint: "Deep valley", difficulty: "medium"),
+                WordItem(word: "Cave", hint: "Underground hole", difficulty: "medium"),
+                WordItem(word: "Coral Reef", hint: "Underwater life", difficulty: "medium"),
+                WordItem(word: "Jungle", hint: "Tropical forest", difficulty: "medium"),
+                WordItem(word: "Aurora", hint: "Northern lights", difficulty: "hard"),
+                WordItem(word: "Geyser", hint: "Hot water spout", difficulty: "hard"),
+                WordItem(word: "Fjord", hint: "Norwegian inlet", difficulty: "hard"),
+                WordItem(word: "Tundra", hint: "Frozen plain", difficulty: "hard"),
+                WordItem(word: "Savanna", hint: "African grassland", difficulty: "hard"),
+                WordItem(word: "Plateau", hint: "Flat highland", difficulty: "hard"),
+                WordItem(word: "Monsoon", hint: "Seasonal rain", difficulty: "hard"),
+                WordItem(word: "Tsunami", hint: "Giant wave", difficulty: "hard"),
+                WordItem(word: "Avalanche", hint: "Snow slide", difficulty: "hard"),
+                WordItem(word: "Stalactite", hint: "Cave formation", difficulty: "hard")
+            ],
+            questionPairs: [
+                QuestionPair(mainQuestion: "What's the best weather?", liarQuestion: "What's the worst weather?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What natural place is most beautiful?", liarQuestion: "What place is most dangerous?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What season is best?", liarQuestion: "What season is worst?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "Where would you camp?", liarQuestion: "Where would you never camp?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What nature sounds relaxing?", liarQuestion: "What nature sounds scary?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What natural disaster is scariest?", liarQuestion: "What weather is just annoying?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What landscape is most calming?", liarQuestion: "What landscape is intimidating?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What would you photograph?", liarQuestion: "What is hard to capture?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "Where does nature seem magical?", liarQuestion: "Where is nature harsh?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What natural wonder would you visit?", liarQuestion: "What natural place is overrated?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What aspect of nature inspires you?", liarQuestion: "What part of nature scares you?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What ecosystem is most important?", liarQuestion: "What ecosystem is most fragile?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What weather phenomenon is most fascinating?", liarQuestion: "What weather is most destructive?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What in nature shows beauty?", liarQuestion: "What in nature shows danger?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "Where would you go to disconnect?", liarQuestion: "Where is too remote?", difficulty: "hard")
+            ]
+        ),
+        
+        // MARK: - Technology
+        Category(
+            name: "Technology",
+            icon: "cpu.fill",
+            words: [
+                WordItem(word: "Smartphone", hint: "Mobile device", difficulty: "easy"),
+                WordItem(word: "Computer", hint: "Desktop machine", difficulty: "easy"),
+                WordItem(word: "Television", hint: "Watch shows", difficulty: "easy"),
+                WordItem(word: "Internet", hint: "World wide web", difficulty: "easy"),
+                WordItem(word: "Camera", hint: "Takes photos", difficulty: "easy"),
+                WordItem(word: "Tablet", hint: "Touch screen device", difficulty: "easy"),
+                WordItem(word: "Printer", hint: "Makes copies", difficulty: "easy"),
+                WordItem(word: "Speaker", hint: "Plays audio", difficulty: "easy"),
+                WordItem(word: "Keyboard", hint: "Type letters", difficulty: "easy"),
+                WordItem(word: "Mouse", hint: "Click pointer", difficulty: "easy"),
+                WordItem(word: "Bluetooth", hint: "Wireless connection", difficulty: "medium"),
+                WordItem(word: "WiFi", hint: "Internet signal", difficulty: "medium"),
+                WordItem(word: "GPS", hint: "Navigation system", difficulty: "medium"),
+                WordItem(word: "Drone", hint: "Flying camera", difficulty: "medium"),
+                WordItem(word: "Robot", hint: "Automated machine", difficulty: "medium"),
+                WordItem(word: "Battery", hint: "Stores power", difficulty: "medium"),
+                WordItem(word: "USB", hint: "Data transfer", difficulty: "medium"),
+                WordItem(word: "Webcam", hint: "Video chat", difficulty: "medium"),
+                WordItem(word: "Router", hint: "Network device", difficulty: "medium"),
+                WordItem(word: "Smartwatch", hint: "Wrist computer", difficulty: "medium"),
+                WordItem(word: "VR Headset", hint: "Virtual reality", difficulty: "hard"),
+                WordItem(word: "3D Printer", hint: "Makes objects", difficulty: "hard"),
+                WordItem(word: "Cloud Storage", hint: "Online files", difficulty: "hard"),
+                WordItem(word: "Cryptocurrency", hint: "Digital money", difficulty: "hard"),
+                WordItem(word: "AI Assistant", hint: "Smart helper", difficulty: "hard"),
+                WordItem(word: "Biometrics", hint: "Body ID", difficulty: "hard"),
+                WordItem(word: "Solar Panel", hint: "Sun power", difficulty: "hard"),
+                WordItem(word: "Smart Home", hint: "Connected house", difficulty: "hard"),
+                WordItem(word: "Wearable", hint: "Tech clothing", difficulty: "hard"),
+                WordItem(word: "Hologram", hint: "3D projection", difficulty: "hard")
+            ],
+            questionPairs: [
+                QuestionPair(mainQuestion: "What tech can't you live without?", liarQuestion: "What tech is overused?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What invention changed everything?", liarQuestion: "What invention was unnecessary?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What gadget would you buy?", liarQuestion: "What gadget is a waste?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What makes life easier?", liarQuestion: "What makes life complicated?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What tech is most impressive?", liarQuestion: "What tech is disappointing?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What tech will be huge in 10 years?", liarQuestion: "What tech will be forgotten?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What app is essential?", liarQuestion: "What app should be deleted?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What tech improves health?", liarQuestion: "What tech harms health?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What device is worth the money?", liarQuestion: "What device is overpriced?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What tech helps connection?", liarQuestion: "What tech causes isolation?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What tech will transform work?", liarQuestion: "What tech is just a fad?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What innovation excites you?", liarQuestion: "What innovation worries you?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What old tech was better?", liarQuestion: "What old tech should stay gone?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What tech deserves more attention?", liarQuestion: "What tech is overhyped?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What will AI improve?", liarQuestion: "What will AI make worse?", difficulty: "hard")
+            ]
+        ),
+        
+        // MARK: - Hobbies
+        Category(
+            name: "Hobbies",
+            icon: "star.fill",
+            words: [
+                WordItem(word: "Reading", hint: "Books", difficulty: "easy"),
+                WordItem(word: "Gaming", hint: "Video games", difficulty: "easy"),
+                WordItem(word: "Cooking", hint: "Making food", difficulty: "easy"),
+                WordItem(word: "Painting", hint: "Art on canvas", difficulty: "easy"),
+                WordItem(word: "Dancing", hint: "Moving to music", difficulty: "easy"),
+                WordItem(word: "Gardening", hint: "Growing plants", difficulty: "easy"),
+                WordItem(word: "Photography", hint: "Taking pictures", difficulty: "easy"),
+                WordItem(word: "Fishing", hint: "Catching fish", difficulty: "easy"),
+                WordItem(word: "Hiking", hint: "Walking trails", difficulty: "easy"),
+                WordItem(word: "Yoga", hint: "Stretching exercise", difficulty: "easy"),
+                WordItem(word: "Knitting", hint: "Making sweaters", difficulty: "medium"),
+                WordItem(word: "Pottery", hint: "Clay work", difficulty: "medium"),
+                WordItem(word: "Woodworking", hint: "Building with wood", difficulty: "medium"),
+                WordItem(word: "Calligraphy", hint: "Fancy writing", difficulty: "medium"),
+                WordItem(word: "Origami", hint: "Paper folding", difficulty: "medium"),
+                WordItem(word: "Birdwatching", hint: "Spotting birds", difficulty: "medium"),
+                WordItem(word: "Astronomy", hint: "Watching stars", difficulty: "medium"),
+                WordItem(word: "Collecting", hint: "Gathering items", difficulty: "medium"),
+                WordItem(word: "Podcasting", hint: "Audio shows", difficulty: "medium"),
+                WordItem(word: "Blogging", hint: "Writing online", difficulty: "medium"),
+                WordItem(word: "Beekeeping", hint: "Honey farming", difficulty: "hard"),
+                WordItem(word: "Metalworking", hint: "Forge crafts", difficulty: "hard"),
+                WordItem(word: "Taxidermy", hint: "Animal preservation", difficulty: "hard"),
+                WordItem(word: "Falconry", hint: "Bird training", difficulty: "hard"),
+                WordItem(word: "Genealogy", hint: "Family tree", difficulty: "hard"),
+                WordItem(word: "Geocaching", hint: "GPS treasure hunt", difficulty: "hard"),
+                WordItem(word: "Homebrewing", hint: "Making beer", difficulty: "hard"),
+                WordItem(word: "Lockpicking", hint: "Opening locks", difficulty: "hard"),
+                WordItem(word: "Mycology", hint: "Mushroom study", difficulty: "hard"),
+                WordItem(word: "Lapidary", hint: "Gem cutting", difficulty: "hard")
+            ],
+            questionPairs: [
+                QuestionPair(mainQuestion: "What hobby is most relaxing?", liarQuestion: "What hobby is stressful?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What hobby would you try?", liarQuestion: "What hobby seems boring?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What hobby is best for creativity?", liarQuestion: "What hobby is repetitive?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What hobby is best with friends?", liarQuestion: "What hobby is too solitary?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What hobby is worth the time?", liarQuestion: "What hobby wastes time?", difficulty: "easy"),
+                QuestionPair(mainQuestion: "What hobby has best community?", liarQuestion: "What hobby attracts odd people?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What hobby improves your life?", liarQuestion: "What hobby is just distraction?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What hobby is impressive?", liarQuestion: "What hobby seems pointless?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What hobby would you teach others?", liarQuestion: "What hobby is too hard to start?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What hobby is underrated?", liarQuestion: "What hobby is overrated?", difficulty: "medium"),
+                QuestionPair(mainQuestion: "What hobby would you do professionally?", liarQuestion: "What hobby should stay casual?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What hobby will be popular?", liarQuestion: "What hobby is dying out?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What hobby builds character?", liarQuestion: "What hobby is just for fun?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What unexpected hobby is rewarding?", liarQuestion: "What hobby seems more fun than it is?", difficulty: "hard"),
+                QuestionPair(mainQuestion: "What hobby would you pick up again?", liarQuestion: "What hobby would you never return to?", difficulty: "hard")
+            ]
+        )
+    ]
+}
